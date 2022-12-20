@@ -1,364 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<nav class="navbar navbar-expand-xxl bg-light sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Pokecrotz</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Generation</a>
-          <a class="nav-link" href="#">About</a>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1 sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="#">Pokemonpedia</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item dropdown">
+          <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Listing Generation
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#gen1">1</a></li>
+            <li><a class="dropdown-item" href="#gen2">2</a></li>
+            <li><a class="dropdown-item" href="#gen3">3</a></li>
+            <li><a class="dropdown-item" href="#gen4">4</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<body>
+  <div class="main">
+    <div class="container mt-5 mb-5">
+      <div class="main-header">
+        <h1 class="text-center mb-3 fw-bold">Welcome to Pokemonpedia!</h1>
+      </div>
+      <div class="header">
+        <div class="row justify-content-center">
+          <div class="col-md-12 pt-2 pb-2">
+            <div class="text-center">
+              <p>Pokemonpedia is an encyclopedia about Pokémon to which anyone can contribute. Since
+                its launch in Desember 2022, it has grown to become one of the largest Pokémon resources on the
+                internet. As part of Pokemongarden, this ever-growing wiki is supported by the Pokemongarden Archives,
+                the Pokemongarden forums and the Pokemongarden Discord. You're welcome to browse for a while, if you
+                wish, or make an account to start editing pages.</p>
+              <br>
+            </div>
+          </div>
+          <div class="col-md-12 pt-2 pb-2">
+            <div class="d-flex justify-content-center">
+              <img class="rounded" width="50%" src="../images/HEADER/banner-2.jpg" alt="">
+            </div>
+          </div>
         </div>
       </div>
+      <!-- Content here -->
+      <div id="gen1" class="mt-5" <div class="mt-5">
+        <h2 class="text-center mb-3">POKEMON GENERATION 1</h2>
+      </div>
+      <table class="table table-striped-columns">
+        <thead>
+          <tr>
+            <th scope="col">No</th>
+            <th scope="col">Pokemon</th>
+            <th scope="col">Pokemon Name</th>
+            <th scope="col">Type</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <th scope="row">1</th>
+            <td> <img src="../images/GEN_1/Arcanine.png"> </td>
+            <td>Arcanine</td>
+            <td>Fire</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td><img src="../images/GEN_1/Beedrill.png"> </td>
+            <td>Beedrill</td>
+            <td>Insect</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td> <img src="../images/GEN_1/Blastoise.png"> </td>
+            <td>Blastoise</td>
+            <td>Water</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td> <img src="../images/GEN_1/Butterfree.png"> </td>
+            <td>Butterfree</td>
+            <td>Insect</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td> <img src="../images/GEN_1/Charizard.png"> </td>
+            <td>Charizard</td>
+            <td>Fire</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td> <img src="../images/GEN_1/Dragonite.png"> </td>
+            <td>Dragonite</td>
+            <td>Dragon</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td> <img src="../images/GEN_1/Ninetales.png"> </td>
+            <td>Ninetales</td>
+            <td>Fire</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td> <img src="../images/GEN_1/Pidgeot.png"> </td>
+            <td>Pidgeot</td>
+            <td>Flying</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td> <img src="../images/GEN_1/Raichu.png"> </td>
+            <td>Raichu</td>
+            <td>Electric</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td> <img src="../images/GEN_1/Venusaur.png"> </td>
+            <td>Venusaur</td>
+            <td>Grass</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="gen2" class="mt-5">
+        <div class="mt-5 mb-3">
+          <h2 class="text-center">POKEMON GENERATION 2</h2>
+        </div>
+        <table class="table table-striped-columns">
+
+          <thead>
+            <tr>
+              <th scope="col">Number</th>
+              <th scope="col">Pokemon</th>
+              <th scope="col">Pokemon-name</th>
+              <th scope="col">Type</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+            <tr>
+              <th scope="row">1</th>
+              <td> <img src="../images/GEN_2/Azumarill.png"> </td>
+              <td>Azumarill</td>
+              <td>Water/Fairy</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td><img src="../images/GEN_2/Elekid.png"> </td>
+              <td>Elekid</td>
+              <td>Electric</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td> <img src="../images/GEN_2/Feraligatr.png"> </td>
+              <td>Feraligatr</td>
+              <td>Water</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td> <img src="../images/GEN_2/Meganium.png"> </td>
+              <td>Meganium</td>
+              <td>Grass</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td> <img src="../images/GEN_2/Noctowl.png"> </td>
+              <td>Noctowl</td>
+              <td>Flying</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td> <img src="../images/GEN_2/Raikou.png"> </td>
+              <td>Raikou</td>
+              <td>Electric</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td> <img src="../images/GEN_2/Suicune.png"> </td>
+              <td> Suicine</td>
+              <td>Water</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td> <img src="../images/GEN_2/Togepi.png"> </td>
+              <td>Togepi</td>
+              <td>Fairy</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td> <img src="../images/GEN_2/Typhlosion.png"> </td>
+              <td>Typhlosion</td>
+              <td>Fire</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td> <img src="../images/GEN_2/Umbreon.png"> </td>
+              <td>Umbreon</td>
+              <td>Dark</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="gen3" class="mt-5">
+        <div class="mt-5 mb-4">
+          <h2 class="text-center">POKEMON GENERATION 3</h2>
+        </div>
+        <table class="table table-striped-columns">
+
+          <thead>
+            <tr>
+              <th scope="col">Number</th>
+              <th scope="col">Pokemon</th>
+              <th scope="col">Pokemon-name</th>
+              <th scope="col">Type</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+            <tr>
+              <th scope="row">1</th>
+              <td> <img src="../images/GEN_3/Blaziken.png"> </td>
+              <td>Blaziken</td>
+              <td>Fire</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td><img src="../images/GEN_3/Gardevoir.png"> </td>
+              <td>Gardevoir</td>
+              <td>Psychic</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td> <img src="../images/GEN_3/Groudon.png"> </td>
+              <td>Groudon</td>
+              <td>Ground</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td> <img src="../images/GEN_3/Hariyama.png"> </td>
+              <td>Hariyama</td>
+              <td>Fighting</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td> <img src="../images/GEN_3/Ludicolo.png"> </td>
+              <td>Ludicolo</td>
+              <td>Grass/Water</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td> <img src="../images/GEN_3/Mightyena.png"> </td>
+              <td>Mightyena</td>
+              <td>Dark/Normal</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td> <img src="../images/GEN_3/Sceptile.png"> </td>
+              <td>Sceptile</td>
+              <td>Grass</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td> <img src="../images/GEN_3/Shiftry.png"> </td>
+              <td> Shiftry</td>
+              <td>Grass/Dark</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td> <img src="../images/GEN_3/Swampert.png"> </td>
+              <td>Swampert</td>
+              <td>Water</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td> <img src="../images/GEN_3/Swellow.png"> </td>
+              <td>Swellow</td>
+              <td>Normal/Flying</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="gen4" class="mt-5">
+        <div class="mt-5 mb-3">
+          <h2 class="text-center">POKEMON GENERATION 4</h2>
+        </div>
+        <table class="table table-striped-columns">
+
+          <thead>
+            <tr>
+              <th scope="col">Number</th>
+              <th scope="col">Pokemon</th>
+              <th scope="col">Pokemon-name</th>
+              <th scope="col">Type</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+            <tr>
+              <th scope="row">1</th>
+              <td> <img src="../images/GEN_4/Bastiodon.png"> </td>
+              <td>Bastiodon</td>
+              <td>Rock</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td> <img src="../images/GEN_4/Electivire.png"> </td>
+              <td>Electivire</td>
+              <td>Electric</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td> <img src="../images/GEN_4/Empoleon.png"> </td>
+              <td>Empoleon</td>
+              <td>Water/Steel</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td> <img src="../images/GEN_4/Gastrodon-East.png"> </td>
+              <td>Gastrodon-East</td>
+              <td>Water/Ground</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td> <img src="../images/GEN_4/Infernape.png"> </td>
+              <td>Infernape</td>
+              <td>Fire/Fighting</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td> <img src="../images/GEN_4/Lucario.png"> </td>
+              <td>Lucario</td>
+              <td>Fighting/Steel</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td> <img src="../images/GEN_4/Luxray.png"> </td>
+              <td>Luxray</td>
+              <td>Electric</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td> <img src="../images/GEN_4/Rampardos.png"> </td>
+              <td>Rampardos</td>
+              <td>Rock</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td> <img src="../images/GEN_4/Torterra.png"> </td>
+              <td>Torterra</td>
+              <td>Grass/Ground</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td> <img src="../images/GEN_4/Vespiquen.png"> </td>
+              <td>Vespiquen</td>
+              <td>Bug/Flying</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
     </div>
-  </nav>
-<div class="mt-5"> <h1 class="text-center" >POKEMON GENERATION 1 !!</h1></div>
+  </div>
 
-<!-- <table class="table table-bordered">
-    <thead class="table-dark">
-        <th>No</th>
-        <th>Pokemon</th>
-        <th>Pokemon-name</th>
-        <th>Type</th>
-    </thead>
-    <tbody>
-        <tr class="info">
-            <td>1</td>
-            <td>Khafid</td>
-            <td>sexyboi69@gmail.com</td>
-        </tr>
-    </tbody>
-</table> -->
-<div class="container mt-5 mb-5">
-    <!-- Content here -->
-<table class="table table-primary table-striped-columns">
-
-    <thead>
-      <tr>
-        <th scope="col">Number</th>
-        <th scope="col">Pokemon</th>
-        <th scope="col">Pokemon-name</th>
-        <th scope="col">Type</th>
-      </tr>
-    </thead>
-    <tbody class="table-group-divider">
-      <tr>
-        <th scope="row">1</th>
-        <td> <img src="../images/GEN_1/Arcanine.png"> </td>
-        <td>Arcanine</td>
-        <td>Fire</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td><img src="../images/GEN_1/Beedrill.png"> </td>
-        <td>Beedrill</td>
-        <td>Insect</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td> <img src="../images/GEN_1/Blastoise.png"> </td>
-        <td>Blastoise</td>
-        <td>Water</td>
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td> <img src="../images/GEN_1/Butterfree.png"> </td>
-        <td>Butterfree</td>
-        <td>Insect</td>
-      </tr>
-      <tr>
-        <th scope="row">5</th>
-        <td> <img src="../images/GEN_1/Charizard.png"> </td>
-        <td>Charizard</td>
-        <td>Fire</td>
-      </tr>
-      <tr>
-        <th scope="row">6</th>
-        <td> <img src="../images/GEN_1/Dragonite.png"> </td>
-        <td>Dragonite</td>
-        <td>Dragon</td>
-      </tr>
-      <tr>
-        <th scope="row">7</th>
-        <td> <img src="../images/GEN_1/Ninetales.png"> </td>
-        <td>Ninetales</td>
-        <td>Fire</td>
-      </tr>
-      <tr>
-        <th scope="row">8</th>
-        <td> <img src="../images/GEN_1/Pidgeot.png"> </td>
-        <td>Pidgeot</td>
-        <td>Flying</td>
-      </tr>
-      <tr>
-        <th scope="row">9</th>
-        <td> <img src="../images/GEN_1/Raichu.png"> </td>
-        <td>Raichu</td>
-        <td>Electric</td>
-      </tr>
-      <tr>
-        <th scope="row">10</th>
-        <td> <img src="../images/GEN_1/Venusaur.png"> </td>
-        <td>Venusaur</td>
-        <td>Grass</td>
-      </tr>
-    </tbody>
-  </table>
-
-</div>
-<body>
-<<<<<<< HEAD
-    
-=======
-  <div class="mt-5">
-    <h1 class="text-center" >POKEMON GENERATION 2 !!</h1>
-  </div> 
-  <div class="container mt-5 mb-5">
-    <!-- Content here -->
-    <table class="table table-primary table-striped-columns">
-
-      <thead>
-        <tr>
-          <th scope="col">Number</th>
-          <th scope="col">Pokemon</th>
-          <th scope="col">Pokemon-name</th>
-          <th scope="col">Type</th>
-        </tr>
-      </thead>
-    <tbody class="table-group-divider">
-       <tr>
-         <th scope="row">1</th>
-        <td> <img src="../images/GEN_2/Azumarill.png"> </td>
-        <td>Azumarill</td>
-        <td>Water/Fairy</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td><img src="../images/GEN_2/Elekid.png"> </td>
-        <td>Elekid</td>
-        <td>Electric</td>
-      </tr>
-      <tr>
-       <th scope="row">3</th>
-       <td> <img src="../images/GEN_2/Feraligatr.png"> </td>
-       <td>Feraligatr</td>
-       <td>Water</td>
-      </tr>
-      <tr>
-       <th scope="row">4</th>
-       <td> <img src="../images/GEN_2/Meganium.png"> </td>
-       <td>Meganium</td>
-       <td>Grass</td>
-      </tr>
-      <tr>
-       <th scope="row">5</th>
-       <td> <img src="../images/GEN_2/Noctowl.png"> </td>
-       <td>Noctowl</td>
-       <td>Flying</td>
-      </tr>
-      <tr>
-       <th scope="row">6</th>
-       <td> <img src="../images/GEN_2/Raikou.png"> </td>
-       <td>Raikou</td>
-       <td>Electric</td>
-      </tr>
-      <tr>
-       <th scope="row">7</th>
-       <td> <img src="../images/GEN_2/Suicune.png"> </td>
-       <td> Suicine</td>
-       <td>Water</td>
-      </tr>
-      <tr>
-       <th scope="row">8</th>
-       <td> <img src="../images/GEN_2/Togepi.png"> </td>
-       <td>Togepi</td>
-       <td>Fairy</td>
-      </tr>
-      <tr>
-       <th scope="row">9</th>
-       <td> <img src="../images/GEN_2/Typhlosion.png"> </td>
-       <td>Typhlosion</td>
-       <td>Fire</td>
-      </tr>
-      <tr>
-       <th scope="row">10</th>
-       <td> <img src="../images/GEN_2/Umbreon.png"> </td>
-       <td>Umbreon</td>
-       <td>Dark</td>
-      </tr>
-    </tbody>
- </table>
-</div>
-<div class="mt-5">
-  <h1 class="text-center" >POKEMON GENERATION 3 !!</h1>
-</div> 
-<div class="container mt-5 mb-5">
-  <!-- Content here -->
-  <table class="table table-primary table-striped-columns">
-
-    <thead>
-      <tr>
-        <th scope="col">Number</th>
-        <th scope="col">Pokemon</th>
-        <th scope="col">Pokemon-name</th>
-        <th scope="col">Type</th>
-      </tr>
-    </thead>
-  <tbody class="table-group-divider">
-    <tr>
-      <th scope="row">1</th>
-      <td> <img src="../images/GEN_3/Blaziken.png"> </td>
-      <td>Blaziken</td>
-      <td>Fire</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td><img src="../images/GEN_3/Gardevoir.png"> </td>
-      <td>Gardevoir</td>
-      <td>Psychic</td>
-    </tr>
-    <tr>
-     <th scope="row">3</th>
-     <td> <img src="../images/GEN_3/Groudon.png"> </td>
-     <td>Groudon</td>
-     <td>Ground</td>
-    </tr>
-    <tr>
-     <th scope="row">4</th>
-     <td> <img src="../images/GEN_3/Hariyama.png"> </td>
-     <td>Hariyama</td>
-     <td>Fighting</td>
-    </tr>
-    <tr>
-     <th scope="row">5</th>
-     <td> <img src="../images/GEN_3/Ludicolo.png"> </td>
-     <td>Ludicolo</td>
-     <td>Grass/Water</td>
-    </tr>
-    <tr>
-     <th scope="row">6</th>
-     <td> <img src="../images/GEN_3/Mightyena.png"> </td>
-     <td>Mightyena</td>
-     <td>Dark/Normal</td>
-    </tr>
-    <tr>
-     <th scope="row">7</th>
-     <td> <img src="../images/GEN_3/Sceptile.png"> </td>
-     <td>Sceptile</td>
-     <td>Grass</td>
-    </tr>
-    <tr>
-     <th scope="row">8</th>
-     <td> <img src="../images/GEN_3/Shiftry.png"> </td>
-     <td> Shiftry</td>
-     <td>Grass/Dark</td>
-    </tr>
-    <tr>
-     <th scope="row">9</th>
-     <td> <img src="../images/GEN_3/Swampert.png"> </td>
-     <td>Swampert</td>
-     <td>Water</td>
-    </tr>
-    <tr>
-     <th scope="row">10</th>
-     <td> <img src="../images/GEN_3/Swellow.png"> </td>
-     <td>Swellow</td>
-     <td>Normal/Flying</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-<div class="mt-5">
-  <h1 class="text-center" >POKEMON GENERATION 4 !!</h1>
-</div> 
-<div class="container mt-5 mb-5">
-  <!-- Content here -->
-  <table class="table table-primary table-striped-columns">
-
-    <thead>
-      <tr>
-        <th scope="col">Number</th>
-        <th scope="col">Pokemon</th>
-        <th scope="col">Pokemon-name</th>
-        <th scope="col">Type</th>
-      </tr>
-    </thead>
-  <tbody class="table-group-divider">
-    <tr>
-      <th scope="row">1</th>
-      <td> <img src="../images/GEN_4/Bastiodon.png"> </td>
-      <td>Bastiodon</td>
-      <td>Rock</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td> <img src="../images/GEN_4/Electivire.png"> </td>
-      <td>Electivire</td>
-      <td>Electric</td>
-    </tr>
-    <tr>
-     <th scope="row">3</th>
-     <td> <img src="../images/GEN_4/Empoleon.png"> </td>
-     <td>Empoleon</td>
-     <td>Water/Steel</td>
-    </tr>
-    <tr>
-     <th scope="row">4</th>
-     <td> <img src="../images/GEN_4/Gastrodon-East.png"> </td>
-     <td>Gastrodon-East</td>
-     <td>Water/Ground</td>
-    </tr>
-    <tr>
-     <th scope="row">5</th>
-     <td> <img src="../images/GEN_4/Infernape.png"> </td>
-     <td>Infernape</td>
-     <td>Fire/Fighting</td>
-    </tr>
-    <tr>
-     <th scope="row">6</th>
-     <td> <img src="../images/GEN_4/Lucario.png"> </td>
-     <td>Lucario</td>
-     <td>Fighting/Steel</td>
-    </tr>
-    <tr>
-     <th scope="row">7</th>
-     <td> <img src="../images/GEN_4/Luxray.png"> </td>
-     <td>Luxray</td>
-     <td>Electric</td>
-    </tr>
-    <tr>
-     <th scope="row">8</th>
-     <td> <img src="../images/GEN_4/Rampardos.png"> </td>
-     <td>Rampardos</td>
-     <td>Rock</td>
-    </tr>
-    <tr>
-     <th scope="row">9</th>
-     <td> <img src="../images/GEN_4/Torterra.png"> </td>
-     <td>Torterra</td>
-     <td>Grass/Ground</td>
-    </tr>
-    <tr>
-     <th scope="row">10</th>
-     <td> <img src="../images/GEN_4/Vespiquen.png"> </td>
-     <td>Vespiquen</td>
-     <td>Bug/Flying</td>
-    </tr>
-  </tbody>
-</table>
-</div>
->>>>>>> bea4bde8860993699c7a004c074218fa25ddb998
 </body>
+
 </html>
